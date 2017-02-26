@@ -1,0 +1,13 @@
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\bin\Debug\Instruction.exe.config
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\bin\Debug\Instruction.exe
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\bin\Debug\Instruction.pdb
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.csprojResolveAssemblyReference.cache
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.Form1.resources
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.Properties.Resources.resources
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.csproj.GenerateResource.Cache
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.exe
+c:\users\tim\documents\visual studio 2013\Projects\Instruction\Instruction\obj\Debug\Instruction.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Instruction\Instruction\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Instruction\Instruction\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Instruction\Instruction\bin\Debug\InstructionsDB.mdf
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\Instruction\Instruction\bin\Debug\InstructionsDB_log.ldf

@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InstructionsDBDataSet" targetNamespace="http://tempuri.org/InstructionsDBDataSet.xsd" xmlns:mstns="http://tempuri.org/InstructionsDBDataSet.xsd" xmlns="http://tempuri.org/InstructionsDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="InstructionsDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InstructionsDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Instruction.Properties.Settings.GlobalReference.Default.InstructionsDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="instructionsTableAdapter" GeneratorDataComponentClassName="instructionsTableAdapter" Name="instructions" UserDataComponentName="instructionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InstructionsDBConnectionString (Settings)" DbObjectName="dbo.instructions" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[instructions] WHERE (([Id] = @Original_Id) AND ((@IsNull_data_vydachi_zayavki = 1 AND [data_vydachi_zayavki] IS NULL) OR ([data_vydachi_zayavki] = @Original_data_vydachi_zayavki)) AND ((@IsNull_dolzhnost_vidav_zayavku = 1 AND [dolzhnost_vidav_zayavku] IS NULL) OR ([dolzhnost_vidav_zayavku] = @Original_dolzhnost_vidav_zayavku)) AND ((@IsNull_rukovod_rabot = 1 AND [rukovod_rabot] IS NULL) OR ([rukovod_rabot] = @Original_rukovod_rabot)) AND ((@IsNull_teh_karta = 1 AND [teh_karta] IS NULL) OR ([teh_karta] = @Original_teh_karta)) AND ((@IsNull_data_nomer_prikaza = 1 AND [data_nomer_prikaza] IS NULL) OR ([data_nomer_prikaza] = @Original_data_nomer_prikaza)) AND ((@IsNull_fio_signal_1 = 1 AND [fio_signal_1] IS NULL) OR ([fio_signal_1] = @Original_fio_signal_1)) AND ((@IsNull_fio_signal_2 = 1 AND [fio_signal_2] IS NULL) OR ([fio_signal_2] = @Original_fio_signal_2)) AND ((@IsNull_fio_signal_3 = 1 AND [fio_signal_3] IS NULL) OR ([fio_signal_3] = @Original_fio_signal_3)) AND ((@IsNull_fio_signal_4 = 1 AND [fio_signal_4] IS NULL) OR ([fio_signal_4] = @Original_fio_signal_4)) AND ((@IsNull_mesto_km_1 = 1 AND [mesto_km_1] IS NULL) OR ([mesto_km_1] = @Original_mesto_km_1)) AND ((@IsNull_mesto_pk_1 = 1 AND [mesto_pk_1] IS NULL) OR ([mesto_pk_1] = @Original_mesto_pk_1)) AND ((@IsNull_mesto_put_1 = 1 AND [mesto_put_1] IS NULL) OR ([mesto_put_1] = @Original_mesto_put_1)) AND ((@IsNull_mesto_km_2 = 1 AND [mesto_km_2] IS NULL) OR ([mesto_km_2] = @Original_mesto_km_2)) AND ((@IsNull_mesto_pk_2 = 1 AND [mesto_pk_2] IS NULL) OR ([mesto_pk_2] = @Original_mesto_pk_2)) AND ((@IsNull_plan_data_rabot = 1 AND [plan_data_rabot] IS NULL) OR ([plan_data_rabot] = @Original_plan_data_rabot)) AND ((@IsNull_po_soglasovaniyou = 1 AND [po_soglasovaniyou] IS NULL) OR ([po_soglasovaniyou] = @Original_po_soglasovaniyou)) AND ((@IsNull_date1 = 1 AND [date1] IS NULL) OR ([date1] = @Original_date1)) AND ((@IsNull_data_c_chasov_1 = 1 AND [data_c_chasov_1] IS NULL) OR ([data_c_chasov_1] = @Original_data_c_chasov_1)) AND ((@IsNull_data_min_1 = 1 AND [data_min_1] IS NULL) OR ([data_min_1] = @Original_data_min_1)) AND ((@IsNull_date2 = 1 AND [date2] IS NULL) OR ([date2] = @Original_date2)) AND ((@IsNull_data_c_chasov_2 = 1 AND [data_c_chasov_2] IS NULL) OR ([data_c_chasov_2] = @Original_data_c_chasov_2)) AND ((@IsNull_data_min_2 = 1 AND [data_min_2] IS NULL) OR ([data_min_2] = @Original_data_min_2)) AND ((@IsNull_fio_dispetchera = 1 AND [fio_dispetchera] IS NULL) OR ([fio_dispetchera] = @Original_fio_dispetchera)) AND ((@IsNull_fio_instructirushego = 1 AND [fio_instructirushego] IS NULL) OR ([fio_instructirushego] = @Original_fio_instructirushego)) AND ((@IsNull_time_record = 1 AND [time_record] IS NULL) OR ([time_record] = @Original_time_record)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_vydachi_zayavki" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_vydachi_zayavki" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_dolzhnost_vidav_zayavku" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_dolzhnost_vidav_zayavku" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_rukovod_rabot" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_rukovod_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_teh_karta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_teh_karta" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_nomer_prikaza" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_nomer_prikaza" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_3" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_4" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_km_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_km_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_pk_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_pk_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_put_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_put_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_km_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_km_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_pk_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_pk_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_plan_data_rabot" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_plan_data_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_po_soglasovaniyou" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_po_soglasovaniyou" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_date1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_c_chasov_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_c_chasov_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_min_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_min_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_date2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_c_chasov_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_c_chasov_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_min_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_min_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_dispetchera" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_dispetchera" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_instructirushego" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_instructirushego" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_time_record" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_time_record" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[instructions] ([data_vydachi_zayavki], [dolzhnost_vidav_zayavku], [rukovod_rabot], [teh_karta], [data_nomer_prikaza], [fio_signal_1], [fio_signal_2], [fio_signal_3], [fio_signal_4], [mesto_km_1], [mesto_pk_1], [mesto_put_1], [mesto_km_2], [mesto_pk_2], [plan_data_rabot], [po_soglasovaniyou], [date1], [data_c_chasov_1], [data_min_1], [date2], [data_c_chasov_2], [data_min_2], [fio_dispetchera], [fio_instructirushego], [time_record]) VALUES (@data_vydachi_zayavki, @dolzhnost_vidav_zayavku, @rukovod_rabot, @teh_karta, @data_nomer_prikaza, @fio_signal_1, @fio_signal_2, @fio_signal_3, @fio_signal_4, @mesto_km_1, @mesto_pk_1, @mesto_put_1, @mesto_km_2, @mesto_pk_2, @plan_data_rabot, @po_soglasovaniyou, @date1, @data_c_chasov_1, @data_min_1, @date2, @data_c_chasov_2, @data_min_2, @fio_dispetchera, @fio_instructirushego, @time_record);
+SELECT Id, data_vydachi_zayavki, dolzhnost_vidav_zayavku, rukovod_rabot, teh_karta, data_nomer_prikaza, fio_signal_1, fio_signal_2, fio_signal_3, fio_signal_4, mesto_km_1, mesto_pk_1, mesto_put_1, mesto_km_2, mesto_pk_2, plan_data_rabot, po_soglasovaniyou, date1, data_c_chasov_1, data_min_1, date2, data_c_chasov_2, data_min_2, fio_dispetchera, fio_instructirushego, time_record FROM instructions WHERE (Id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_vydachi_zayavki" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@dolzhnost_vidav_zayavku" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@rukovod_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@teh_karta" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_nomer_prikaza" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_3" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_4" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_km_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_pk_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_put_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_km_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_pk_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@plan_data_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@po_soglasovaniyou" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@date1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_c_chasov_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_min_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@date2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_c_chasov_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_min_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_dispetchera" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_instructirushego" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@time_record" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, data_vydachi_zayavki, dolzhnost_vidav_zayavku, rukovod_rabot, teh_karta, data_nomer_prikaza, fio_signal_1, fio_signal_2, fio_signal_3, fio_signal_4, mesto_km_1, mesto_pk_1, mesto_put_1, mesto_km_2, mesto_pk_2, plan_data_rabot, po_soglasovaniyou, date1, data_c_chasov_1, data_min_1, date2, data_c_chasov_2, data_min_2, fio_dispetchera, fio_instructirushego, time_record FROM dbo.instructions</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[instructions] SET [data_vydachi_zayavki] = @data_vydachi_zayavki, [dolzhnost_vidav_zayavku] = @dolzhnost_vidav_zayavku, [rukovod_rabot] = @rukovod_rabot, [teh_karta] = @teh_karta, [data_nomer_prikaza] = @data_nomer_prikaza, [fio_signal_1] = @fio_signal_1, [fio_signal_2] = @fio_signal_2, [fio_signal_3] = @fio_signal_3, [fio_signal_4] = @fio_signal_4, [mesto_km_1] = @mesto_km_1, [mesto_pk_1] = @mesto_pk_1, [mesto_put_1] = @mesto_put_1, [mesto_km_2] = @mesto_km_2, [mesto_pk_2] = @mesto_pk_2, [plan_data_rabot] = @plan_data_rabot, [po_soglasovaniyou] = @po_soglasovaniyou, [date1] = @date1, [data_c_chasov_1] = @data_c_chasov_1, [data_min_1] = @data_min_1, [date2] = @date2, [data_c_chasov_2] = @data_c_chasov_2, [data_min_2] = @data_min_2, [fio_dispetchera] = @fio_dispetchera, [fio_instructirushego] = @fio_instructirushego, [time_record] = @time_record WHERE (([Id] = @Original_Id) AND ((@IsNull_data_vydachi_zayavki = 1 AND [data_vydachi_zayavki] IS NULL) OR ([data_vydachi_zayavki] = @Original_data_vydachi_zayavki)) AND ((@IsNull_dolzhnost_vidav_zayavku = 1 AND [dolzhnost_vidav_zayavku] IS NULL) OR ([dolzhnost_vidav_zayavku] = @Original_dolzhnost_vidav_zayavku)) AND ((@IsNull_rukovod_rabot = 1 AND [rukovod_rabot] IS NULL) OR ([rukovod_rabot] = @Original_rukovod_rabot)) AND ((@IsNull_teh_karta = 1 AND [teh_karta] IS NULL) OR ([teh_karta] = @Original_teh_karta)) AND ((@IsNull_data_nomer_prikaza = 1 AND [data_nomer_prikaza] IS NULL) OR ([data_nomer_prikaza] = @Original_data_nomer_prikaza)) AND ((@IsNull_fio_signal_1 = 1 AND [fio_signal_1] IS NULL) OR ([fio_signal_1] = @Original_fio_signal_1)) AND ((@IsNull_fio_signal_2 = 1 AND [fio_signal_2] IS NULL) OR ([fio_signal_2] = @Original_fio_signal_2)) AND ((@IsNull_fio_signal_3 = 1 AND [fio_signal_3] IS NULL) OR ([fio_signal_3] = @Original_fio_signal_3)) AND ((@IsNull_fio_signal_4 = 1 AND [fio_signal_4] IS NULL) OR ([fio_signal_4] = @Original_fio_signal_4)) AND ((@IsNull_mesto_km_1 = 1 AND [mesto_km_1] IS NULL) OR ([mesto_km_1] = @Original_mesto_km_1)) AND ((@IsNull_mesto_pk_1 = 1 AND [mesto_pk_1] IS NULL) OR ([mesto_pk_1] = @Original_mesto_pk_1)) AND ((@IsNull_mesto_put_1 = 1 AND [mesto_put_1] IS NULL) OR ([mesto_put_1] = @Original_mesto_put_1)) AND ((@IsNull_mesto_km_2 = 1 AND [mesto_km_2] IS NULL) OR ([mesto_km_2] = @Original_mesto_km_2)) AND ((@IsNull_mesto_pk_2 = 1 AND [mesto_pk_2] IS NULL) OR ([mesto_pk_2] = @Original_mesto_pk_2)) AND ((@IsNull_plan_data_rabot = 1 AND [plan_data_rabot] IS NULL) OR ([plan_data_rabot] = @Original_plan_data_rabot)) AND ((@IsNull_po_soglasovaniyou = 1 AND [po_soglasovaniyou] IS NULL) OR ([po_soglasovaniyou] = @Original_po_soglasovaniyou)) AND ((@IsNull_date1 = 1 AND [date1] IS NULL) OR ([date1] = @Original_date1)) AND ((@IsNull_data_c_chasov_1 = 1 AND [data_c_chasov_1] IS NULL) OR ([data_c_chasov_1] = @Original_data_c_chasov_1)) AND ((@IsNull_data_min_1 = 1 AND [data_min_1] IS NULL) OR ([data_min_1] = @Original_data_min_1)) AND ((@IsNull_date2 = 1 AND [date2] IS NULL) OR ([date2] = @Original_date2)) AND ((@IsNull_data_c_chasov_2 = 1 AND [data_c_chasov_2] IS NULL) OR ([data_c_chasov_2] = @Original_data_c_chasov_2)) AND ((@IsNull_data_min_2 = 1 AND [data_min_2] IS NULL) OR ([data_min_2] = @Original_data_min_2)) AND ((@IsNull_fio_dispetchera = 1 AND [fio_dispetchera] IS NULL) OR ([fio_dispetchera] = @Original_fio_dispetchera)) AND ((@IsNull_fio_instructirushego = 1 AND [fio_instructirushego] IS NULL) OR ([fio_instructirushego] = @Original_fio_instructirushego)) AND ((@IsNull_time_record = 1 AND [time_record] IS NULL) OR ([time_record] = @Original_time_record)));
+SELECT Id, data_vydachi_zayavki, dolzhnost_vidav_zayavku, rukovod_rabot, teh_karta, data_nomer_prikaza, fio_signal_1, fio_signal_2, fio_signal_3, fio_signal_4, mesto_km_1, mesto_pk_1, mesto_put_1, mesto_km_2, mesto_pk_2, plan_data_rabot, po_soglasovaniyou, date1, data_c_chasov_1, data_min_1, date2, data_c_chasov_2, data_min_2, fio_dispetchera, fio_instructirushego, time_record FROM instructions WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_vydachi_zayavki" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@dolzhnost_vidav_zayavku" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@rukovod_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@teh_karta" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_nomer_prikaza" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_3" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_signal_4" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_km_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_pk_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_put_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_km_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@mesto_pk_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@plan_data_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@po_soglasovaniyou" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@date1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_c_chasov_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_min_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@date2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_c_chasov_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@data_min_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_dispetchera" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@fio_instructirushego" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@time_record" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_vydachi_zayavki" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_vydachi_zayavki" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_vydachi_zayavki" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_dolzhnost_vidav_zayavku" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_dolzhnost_vidav_zayavku" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="dolzhnost_vidav_zayavku" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_rukovod_rabot" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_rukovod_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="rukovod_rabot" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_teh_karta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_teh_karta" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="teh_karta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_nomer_prikaza" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_nomer_prikaza" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_nomer_prikaza" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_3" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_signal_4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_signal_4" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_signal_4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_km_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_km_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_pk_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_pk_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_put_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_put_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_put_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_km_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_km_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_km_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_mesto_pk_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_mesto_pk_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="mesto_pk_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_plan_data_rabot" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_plan_data_rabot" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="plan_data_rabot" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_po_soglasovaniyou" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_po_soglasovaniyou" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="po_soglasovaniyou" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_date1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_c_chasov_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_c_chasov_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_min_1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_min_1" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_date2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="date2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_c_chasov_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_c_chasov_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_c_chasov_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_data_min_2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_data_min_2" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="data_min_2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_dispetchera" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_dispetchera" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_dispetchera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fio_instructirushego" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_fio_instructirushego" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="fio_instructirushego" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_time_record" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_time_record" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="time_record" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="[C:\USERS\TIM\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\INSTRUCTION\INSTRUCTION\INSTRUCTIONSDB.MDF].dbo.instructions" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="data_vydachi_zayavki" DataSetColumn="data_vydachi_zayavki" />
+              <Mapping SourceColumn="dolzhnost_vidav_zayavku" DataSetColumn="dolzhnost_vidav_zayavku" />
+              <Mapping SourceColumn="rukovod_rabot" DataSetColumn="rukovod_rabot" />
+              <Mapping SourceColumn="teh_karta" DataSetColumn="teh_karta" />
+              <Mapping SourceColumn="data_nomer_prikaza" DataSetColumn="data_nomer_prikaza" />
+              <Mapping SourceColumn="fio_signal_1" DataSetColumn="fio_signal_1" />
+              <Mapping SourceColumn="fio_signal_2" DataSetColumn="fio_signal_2" />
+              <Mapping SourceColumn="fio_signal_3" DataSetColumn="fio_signal_3" />
+              <Mapping SourceColumn="fio_signal_4" DataSetColumn="fio_signal_4" />
+              <Mapping SourceColumn="mesto_km_1" DataSetColumn="mesto_km_1" />
+              <Mapping SourceColumn="mesto_pk_1" DataSetColumn="mesto_pk_1" />
+              <Mapping SourceColumn="mesto_put_1" DataSetColumn="mesto_put_1" />
+              <Mapping SourceColumn="mesto_km_2" DataSetColumn="mesto_km_2" />
+              <Mapping SourceColumn="mesto_pk_2" DataSetColumn="mesto_pk_2" />
+              <Mapping SourceColumn="plan_data_rabot" DataSetColumn="plan_data_rabot" />
+              <Mapping SourceColumn="po_soglasovaniyou" DataSetColumn="po_soglasovaniyou" />
+              <Mapping SourceColumn="date1" DataSetColumn="date1" />
+              <Mapping SourceColumn="data_c_chasov_1" DataSetColumn="data_c_chasov_1" />
+              <Mapping SourceColumn="data_min_1" DataSetColumn="data_min_1" />
+              <Mapping SourceColumn="date2" DataSetColumn="date2" />
+              <Mapping SourceColumn="data_c_chasov_2" DataSetColumn="data_c_chasov_2" />
+              <Mapping SourceColumn="data_min_2" DataSetColumn="data_min_2" />
+              <Mapping SourceColumn="fio_dispetchera" DataSetColumn="fio_dispetchera" />
+              <Mapping SourceColumn="fio_instructirushego" DataSetColumn="fio_instructirushego" />
+              <Mapping SourceColumn="time_record" DataSetColumn="time_record" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InstructionsDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="InstructionsDBDataSet" msprop:Generator_UserDSName="InstructionsDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="instructions" msprop:Generator_TableClassName="instructionsDataTable" msprop:Generator_TableVarName="tableinstructions" msprop:Generator_TablePropName="instructions" msprop:Generator_RowDeletingName="instructionsRowDeleting" msprop:Generator_RowChangingName="instructionsRowChanging" msprop:Generator_RowEvHandlerName="instructionsRowChangeEventHandler" msprop:Generator_RowDeletedName="instructionsRowDeleted" msprop:Generator_UserTableName="instructions" msprop:Generator_RowChangedName="instructionsRowChanged" msprop:Generator_RowEvArgName="instructionsRowChangeEvent" msprop:Generator_RowClassName="instructionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="data_vydachi_zayavki" msprop:Generator_ColumnVarNameInTable="columndata_vydachi_zayavki" msprop:Generator_ColumnPropNameInRow="data_vydachi_zayavki" msprop:Generator_ColumnPropNameInTable="data_vydachi_zayavkiColumn" msprop:Generator_UserColumnName="data_vydachi_zayavki" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dolzhnost_vidav_zayavku" msprop:Generator_ColumnVarNameInTable="columndolzhnost_vidav_zayavku" msprop:Generator_ColumnPropNameInRow="dolzhnost_vidav_zayavku" msprop:Generator_ColumnPropNameInTable="dolzhnost_vidav_zayavkuColumn" msprop:Generator_UserColumnName="dolzhnost_vidav_zayavku" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rukovod_rabot" msprop:Generator_ColumnVarNameInTable="columnrukovod_rabot" msprop:Generator_ColumnPropNameInRow="rukovod_rabot" msprop:Generator_ColumnPropNameInTable="rukovod_rabotColumn" msprop:Generator_UserColumnName="rukovod_rabot" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teh_karta" msprop:Generator_ColumnVarNameInTable="columnteh_karta" msprop:Generator_ColumnPropNameInRow="teh_karta" msprop:Generator_ColumnPropNameInTable="teh_kartaColumn" msprop:Generator_UserColumnName="teh_karta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_nomer_prikaza" msprop:Generator_ColumnVarNameInTable="columndata_nomer_prikaza" msprop:Generator_ColumnPropNameInRow="data_nomer_prikaza" msprop:Generator_ColumnPropNameInTable="data_nomer_prikazaColumn" msprop:Generator_UserColumnName="data_nomer_prikaza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_signal_1" msprop:Generator_ColumnVarNameInTable="columnfio_signal_1" msprop:Generator_ColumnPropNameInRow="fio_signal_1" msprop:Generator_ColumnPropNameInTable="fio_signal_1Column" msprop:Generator_UserColumnName="fio_signal_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_signal_2" msprop:Generator_ColumnVarNameInTable="columnfio_signal_2" msprop:Generator_ColumnPropNameInRow="fio_signal_2" msprop:Generator_ColumnPropNameInTable="fio_signal_2Column" msprop:Generator_UserColumnName="fio_signal_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_signal_3" msprop:Generator_ColumnVarNameInTable="columnfio_signal_3" msprop:Generator_ColumnPropNameInRow="fio_signal_3" msprop:Generator_ColumnPropNameInTable="fio_signal_3Column" msprop:Generator_UserColumnName="fio_signal_3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_signal_4" msprop:Generator_ColumnVarNameInTable="columnfio_signal_4" msprop:Generator_ColumnPropNameInRow="fio_signal_4" msprop:Generator_ColumnPropNameInTable="fio_signal_4Column" msprop:Generator_UserColumnName="fio_signal_4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto_km_1" msprop:Generator_ColumnVarNameInTable="columnmesto_km_1" msprop:Generator_ColumnPropNameInRow="mesto_km_1" msprop:Generator_ColumnPropNameInTable="mesto_km_1Column" msprop:Generator_UserColumnName="mesto_km_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto_pk_1" msprop:Generator_ColumnVarNameInTable="columnmesto_pk_1" msprop:Generator_ColumnPropNameInRow="mesto_pk_1" msprop:Generator_ColumnPropNameInTable="mesto_pk_1Column" msprop:Generator_UserColumnName="mesto_pk_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto_put_1" msprop:Generator_ColumnVarNameInTable="columnmesto_put_1" msprop:Generator_ColumnPropNameInRow="mesto_put_1" msprop:Generator_ColumnPropNameInTable="mesto_put_1Column" msprop:Generator_UserColumnName="mesto_put_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto_km_2" msprop:Generator_ColumnVarNameInTable="columnmesto_km_2" msprop:Generator_ColumnPropNameInRow="mesto_km_2" msprop:Generator_ColumnPropNameInTable="mesto_km_2Column" msprop:Generator_UserColumnName="mesto_km_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mesto_pk_2" msprop:Generator_ColumnVarNameInTable="columnmesto_pk_2" msprop:Generator_ColumnPropNameInRow="mesto_pk_2" msprop:Generator_ColumnPropNameInTable="mesto_pk_2Column" msprop:Generator_UserColumnName="mesto_pk_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="plan_data_rabot" msprop:Generator_ColumnVarNameInTable="columnplan_data_rabot" msprop:Generator_ColumnPropNameInRow="plan_data_rabot" msprop:Generator_ColumnPropNameInTable="plan_data_rabotColumn" msprop:Generator_UserColumnName="plan_data_rabot" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="po_soglasovaniyou" msprop:Generator_ColumnVarNameInTable="columnpo_soglasovaniyou" msprop:Generator_ColumnPropNameInRow="po_soglasovaniyou" msprop:Generator_ColumnPropNameInTable="po_soglasovaniyouColumn" msprop:Generator_UserColumnName="po_soglasovaniyou" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date1" msprop:Generator_ColumnVarNameInTable="columndate1" msprop:Generator_ColumnPropNameInRow="date1" msprop:Generator_ColumnPropNameInTable="date1Column" msprop:Generator_UserColumnName="date1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_c_chasov_1" msprop:Generator_ColumnVarNameInTable="columndata_c_chasov_1" msprop:Generator_ColumnPropNameInRow="data_c_chasov_1" msprop:Generator_ColumnPropNameInTable="data_c_chasov_1Column" msprop:Generator_UserColumnName="data_c_chasov_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_min_1" msprop:Generator_ColumnVarNameInTable="columndata_min_1" msprop:Generator_ColumnPropNameInRow="data_min_1" msprop:Generator_ColumnPropNameInTable="data_min_1Column" msprop:Generator_UserColumnName="data_min_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date2" msprop:Generator_ColumnVarNameInTable="columndate2" msprop:Generator_ColumnPropNameInRow="date2" msprop:Generator_ColumnPropNameInTable="date2Column" msprop:Generator_UserColumnName="date2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_c_chasov_2" msprop:Generator_ColumnVarNameInTable="columndata_c_chasov_2" msprop:Generator_ColumnPropNameInRow="data_c_chasov_2" msprop:Generator_ColumnPropNameInTable="data_c_chasov_2Column" msprop:Generator_UserColumnName="data_c_chasov_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_min_2" msprop:Generator_ColumnVarNameInTable="columndata_min_2" msprop:Generator_ColumnPropNameInRow="data_min_2" msprop:Generator_ColumnPropNameInTable="data_min_2Column" msprop:Generator_UserColumnName="data_min_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_dispetchera" msprop:Generator_ColumnVarNameInTable="columnfio_dispetchera" msprop:Generator_ColumnPropNameInRow="fio_dispetchera" msprop:Generator_ColumnPropNameInTable="fio_dispetcheraColumn" msprop:Generator_UserColumnName="fio_dispetchera" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fio_instructirushego" msprop:Generator_ColumnVarNameInTable="columnfio_instructirushego" msprop:Generator_ColumnPropNameInRow="fio_instructirushego" msprop:Generator_ColumnPropNameInTable="fio_instructirushegoColumn" msprop:Generator_UserColumnName="fio_instructirushego" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="time_record" msprop:Generator_ColumnVarNameInTable="columntime_record" msprop:Generator_ColumnPropNameInRow="time_record" msprop:Generator_ColumnPropNameInTable="time_recordColumn" msprop:Generator_UserColumnName="time_record" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:instructions" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
